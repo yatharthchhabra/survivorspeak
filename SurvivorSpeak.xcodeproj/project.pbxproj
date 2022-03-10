@@ -1,0 +1,603 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C54563EC27DA809200AA3402 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54563EB27DA809200AA3402 /* AppDelegate.swift */; };
+		C54563EE27DA809200AA3402 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54563ED27DA809200AA3402 /* SceneDelegate.swift */; };
+		C54563F027DA809200AA3402 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54563EF27DA809200AA3402 /* ViewController.swift */; };
+		C54563F327DA809200AA3402 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54563F127DA809200AA3402 /* Main.storyboard */; };
+		C54563F527DA809300AA3402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C54563F427DA809300AA3402 /* Assets.xcassets */; };
+		C54563F827DA809300AA3402 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54563F627DA809300AA3402 /* LaunchScreen.storyboard */; };
+		C545640327DA809300AA3402 /* SurvivorSpeakTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545640227DA809300AA3402 /* SurvivorSpeakTests.swift */; };
+		C545640D27DA809300AA3402 /* SurvivorSpeakUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545640C27DA809300AA3402 /* SurvivorSpeakUITests.swift */; };
+		C545640F27DA809300AA3402 /* SurvivorSpeakUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545640E27DA809300AA3402 /* SurvivorSpeakUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C54563FF27DA809300AA3402 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C54563E027DA809200AA3402 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C54563E727DA809200AA3402;
+			remoteInfo = SurvivorSpeak;
+		};
+		C545640927DA809300AA3402 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C54563E027DA809200AA3402 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C54563E727DA809200AA3402;
+			remoteInfo = SurvivorSpeak;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C54563E827DA809200AA3402 /* SurvivorSpeak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurvivorSpeak.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C54563EB27DA809200AA3402 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C54563ED27DA809200AA3402 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C54563EF27DA809200AA3402 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C54563F227DA809200AA3402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C54563F427DA809300AA3402 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C54563F727DA809300AA3402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C54563F927DA809300AA3402 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C54563FE27DA809300AA3402 /* SurvivorSpeakTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurvivorSpeakTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C545640227DA809300AA3402 /* SurvivorSpeakTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurvivorSpeakTests.swift; sourceTree = "<group>"; };
+		C545640827DA809300AA3402 /* SurvivorSpeakUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurvivorSpeakUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C545640C27DA809300AA3402 /* SurvivorSpeakUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurvivorSpeakUITests.swift; sourceTree = "<group>"; };
+		C545640E27DA809300AA3402 /* SurvivorSpeakUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurvivorSpeakUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C54563E527DA809200AA3402 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C54563FB27DA809300AA3402 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C545640527DA809300AA3402 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C54563DF27DA809200AA3402 = {
+			isa = PBXGroup;
+			children = (
+				C54563EA27DA809200AA3402 /* SurvivorSpeak */,
+				C545640127DA809300AA3402 /* SurvivorSpeakTests */,
+				C545640B27DA809300AA3402 /* SurvivorSpeakUITests */,
+				C54563E927DA809200AA3402 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C54563E927DA809200AA3402 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C54563E827DA809200AA3402 /* SurvivorSpeak.app */,
+				C54563FE27DA809300AA3402 /* SurvivorSpeakTests.xctest */,
+				C545640827DA809300AA3402 /* SurvivorSpeakUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C54563EA27DA809200AA3402 /* SurvivorSpeak */ = {
+			isa = PBXGroup;
+			children = (
+				C54563EB27DA809200AA3402 /* AppDelegate.swift */,
+				C54563ED27DA809200AA3402 /* SceneDelegate.swift */,
+				C54563EF27DA809200AA3402 /* ViewController.swift */,
+				C54563F127DA809200AA3402 /* Main.storyboard */,
+				C54563F427DA809300AA3402 /* Assets.xcassets */,
+				C54563F627DA809300AA3402 /* LaunchScreen.storyboard */,
+				C54563F927DA809300AA3402 /* Info.plist */,
+			);
+			path = SurvivorSpeak;
+			sourceTree = "<group>";
+		};
+		C545640127DA809300AA3402 /* SurvivorSpeakTests */ = {
+			isa = PBXGroup;
+			children = (
+				C545640227DA809300AA3402 /* SurvivorSpeakTests.swift */,
+			);
+			path = SurvivorSpeakTests;
+			sourceTree = "<group>";
+		};
+		C545640B27DA809300AA3402 /* SurvivorSpeakUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C545640C27DA809300AA3402 /* SurvivorSpeakUITests.swift */,
+				C545640E27DA809300AA3402 /* SurvivorSpeakUITestsLaunchTests.swift */,
+			);
+			path = SurvivorSpeakUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C54563E727DA809200AA3402 /* SurvivorSpeak */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C545641227DA809300AA3402 /* Build configuration list for PBXNativeTarget "SurvivorSpeak" */;
+			buildPhases = (
+				C54563E427DA809200AA3402 /* Sources */,
+				C54563E527DA809200AA3402 /* Frameworks */,
+				C54563E627DA809200AA3402 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SurvivorSpeak;
+			productName = SurvivorSpeak;
+			productReference = C54563E827DA809200AA3402 /* SurvivorSpeak.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C54563FD27DA809300AA3402 /* SurvivorSpeakTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C545641527DA809300AA3402 /* Build configuration list for PBXNativeTarget "SurvivorSpeakTests" */;
+			buildPhases = (
+				C54563FA27DA809300AA3402 /* Sources */,
+				C54563FB27DA809300AA3402 /* Frameworks */,
+				C54563FC27DA809300AA3402 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C545640027DA809300AA3402 /* PBXTargetDependency */,
+			);
+			name = SurvivorSpeakTests;
+			productName = SurvivorSpeakTests;
+			productReference = C54563FE27DA809300AA3402 /* SurvivorSpeakTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C545640727DA809300AA3402 /* SurvivorSpeakUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C545641827DA809300AA3402 /* Build configuration list for PBXNativeTarget "SurvivorSpeakUITests" */;
+			buildPhases = (
+				C545640427DA809300AA3402 /* Sources */,
+				C545640527DA809300AA3402 /* Frameworks */,
+				C545640627DA809300AA3402 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C545640A27DA809300AA3402 /* PBXTargetDependency */,
+			);
+			name = SurvivorSpeakUITests;
+			productName = SurvivorSpeakUITests;
+			productReference = C545640827DA809300AA3402 /* SurvivorSpeakUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C54563E027DA809200AA3402 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					C54563E727DA809200AA3402 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					C54563FD27DA809300AA3402 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = C54563E727DA809200AA3402;
+					};
+					C545640727DA809300AA3402 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = C54563E727DA809200AA3402;
+					};
+				};
+			};
+			buildConfigurationList = C54563E327DA809200AA3402 /* Build configuration list for PBXProject "SurvivorSpeak" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C54563DF27DA809200AA3402;
+			productRefGroup = C54563E927DA809200AA3402 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C54563E727DA809200AA3402 /* SurvivorSpeak */,
+				C54563FD27DA809300AA3402 /* SurvivorSpeakTests */,
+				C545640727DA809300AA3402 /* SurvivorSpeakUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C54563E627DA809200AA3402 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C54563F827DA809300AA3402 /* LaunchScreen.storyboard in Resources */,
+				C54563F527DA809300AA3402 /* Assets.xcassets in Resources */,
+				C54563F327DA809200AA3402 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C54563FC27DA809300AA3402 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C545640627DA809300AA3402 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C54563E427DA809200AA3402 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C54563F027DA809200AA3402 /* ViewController.swift in Sources */,
+				C54563EC27DA809200AA3402 /* AppDelegate.swift in Sources */,
+				C54563EE27DA809200AA3402 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C54563FA27DA809300AA3402 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C545640327DA809300AA3402 /* SurvivorSpeakTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C545640427DA809300AA3402 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C545640D27DA809300AA3402 /* SurvivorSpeakUITests.swift in Sources */,
+				C545640F27DA809300AA3402 /* SurvivorSpeakUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C545640027DA809300AA3402 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C54563E727DA809200AA3402 /* SurvivorSpeak */;
+			targetProxy = C54563FF27DA809300AA3402 /* PBXContainerItemProxy */;
+		};
+		C545640A27DA809300AA3402 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C54563E727DA809200AA3402 /* SurvivorSpeak */;
+			targetProxy = C545640927DA809300AA3402 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C54563F127DA809200AA3402 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C54563F227DA809200AA3402 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C54563F627DA809300AA3402 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C54563F727DA809300AA3402 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C545641027DA809300AA3402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C545641127DA809300AA3402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C545641327DA809300AA3402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SurvivorSpeak/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eecs441.SurvivorSpeak;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C545641427DA809300AA3402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SurvivorSpeak/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eecs441.SurvivorSpeak;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C545641627DA809300AA3402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eecs441.SurvivorSpeakTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SurvivorSpeak.app/SurvivorSpeak";
+			};
+			name = Debug;
+		};
+		C545641727DA809300AA3402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eecs441.SurvivorSpeakTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SurvivorSpeak.app/SurvivorSpeak";
+			};
+			name = Release;
+		};
+		C545641927DA809300AA3402 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eecs441.SurvivorSpeakUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SurvivorSpeak;
+			};
+			name = Debug;
+		};
+		C545641A27DA809300AA3402 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = eecs441.SurvivorSpeakUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SurvivorSpeak;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C54563E327DA809200AA3402 /* Build configuration list for PBXProject "SurvivorSpeak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C545641027DA809300AA3402 /* Debug */,
+				C545641127DA809300AA3402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C545641227DA809300AA3402 /* Build configuration list for PBXNativeTarget "SurvivorSpeak" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C545641327DA809300AA3402 /* Debug */,
+				C545641427DA809300AA3402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C545641527DA809300AA3402 /* Build configuration list for PBXNativeTarget "SurvivorSpeakTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C545641627DA809300AA3402 /* Debug */,
+				C545641727DA809300AA3402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C545641827DA809300AA3402 /* Build configuration list for PBXNativeTarget "SurvivorSpeakUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C545641927DA809300AA3402 /* Debug */,
+				C545641A27DA809300AA3402 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C54563E027DA809200AA3402 /* Project object */;
+}
