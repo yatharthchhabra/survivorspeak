@@ -7,10 +7,15 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class TestViewController: UIViewController {
 
+    @IBAction func MyButton(_ sender: UIButton) {
+        view.backgroundColor = .red
+
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        view.backgroundColor = .blue
         // Do any additional setup after loading the view.
     }
 
