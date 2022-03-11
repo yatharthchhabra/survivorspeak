@@ -7,11 +7,13 @@
 
 import UIKit
 
-class TestViewController: UIViewController {
+class Q1ViewController: UIViewController {
+    let data = UserDefaults.standard
 
-    @IBAction func MyButton(_ sender: UIButton) {
-        view.backgroundColor = .red
-
+    @IBOutlet weak var answer: UITextField!
+    @IBAction func okClicked(_ sender: UIButton) {
+        let defaults = UserDefaults.standard
+        defaults.set(answer.text, forKey: "Name")
     }
     override func viewDidLoad() {
         super.viewDidLoad()

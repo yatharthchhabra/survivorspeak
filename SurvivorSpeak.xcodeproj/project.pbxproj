@@ -9,13 +9,20 @@
 /* Begin PBXBuildFile section */
 		C54563EC27DA809200AA3402 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54563EB27DA809200AA3402 /* AppDelegate.swift */; };
 		C54563EE27DA809200AA3402 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54563ED27DA809200AA3402 /* SceneDelegate.swift */; };
-		C54563F027DA809200AA3402 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54563EF27DA809200AA3402 /* ViewController.swift */; };
+		C54563F027DA809200AA3402 /* Q1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54563EF27DA809200AA3402 /* Q1ViewController.swift */; };
 		C54563F327DA809200AA3402 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54563F127DA809200AA3402 /* Main.storyboard */; };
 		C54563F527DA809300AA3402 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C54563F427DA809300AA3402 /* Assets.xcassets */; };
 		C54563F827DA809300AA3402 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C54563F627DA809300AA3402 /* LaunchScreen.storyboard */; };
 		C545640327DA809300AA3402 /* SurvivorSpeakTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545640227DA809300AA3402 /* SurvivorSpeakTests.swift */; };
 		C545640D27DA809300AA3402 /* SurvivorSpeakUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545640C27DA809300AA3402 /* SurvivorSpeakUITests.swift */; };
 		C545640F27DA809300AA3402 /* SurvivorSpeakUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545640E27DA809300AA3402 /* SurvivorSpeakUITestsLaunchTests.swift */; };
+		C545641C27DA946C00AA3402 /* Q2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545641B27DA946C00AA3402 /* Q2ViewController.swift */; };
+		C545641E27DA947A00AA3402 /* Q3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545641D27DA947A00AA3402 /* Q3ViewController.swift */; };
+		C545642027DA948800AA3402 /* Q4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545641F27DA948800AA3402 /* Q4ViewController.swift */; };
+		C545642227DA949200AA3402 /* Q5ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545642127DA949200AA3402 /* Q5ViewController.swift */; };
+		C545642427DA94A100AA3402 /* Q6ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545642327DA94A100AA3402 /* Q6ViewController.swift */; };
+		C545642627DA94B600AA3402 /* Q7ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545642527DA94B600AA3402 /* Q7ViewController.swift */; };
+		C545642827DBA73400AA3402 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C545642727DBA73400AA3402 /* ReportViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +46,7 @@
 		C54563E827DA809200AA3402 /* SurvivorSpeak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurvivorSpeak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C54563EB27DA809200AA3402 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C54563ED27DA809200AA3402 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C54563EF27DA809200AA3402 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C54563EF27DA809200AA3402 /* Q1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q1ViewController.swift; sourceTree = "<group>"; };
 		C54563F227DA809200AA3402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C54563F427DA809300AA3402 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C54563F727DA809300AA3402 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +56,13 @@
 		C545640827DA809300AA3402 /* SurvivorSpeakUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SurvivorSpeakUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C545640C27DA809300AA3402 /* SurvivorSpeakUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurvivorSpeakUITests.swift; sourceTree = "<group>"; };
 		C545640E27DA809300AA3402 /* SurvivorSpeakUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurvivorSpeakUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C545641B27DA946C00AA3402 /* Q2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q2ViewController.swift; sourceTree = "<group>"; };
+		C545641D27DA947A00AA3402 /* Q3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q3ViewController.swift; sourceTree = "<group>"; };
+		C545641F27DA948800AA3402 /* Q4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q4ViewController.swift; sourceTree = "<group>"; };
+		C545642127DA949200AA3402 /* Q5ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q5ViewController.swift; sourceTree = "<group>"; };
+		C545642327DA94A100AA3402 /* Q6ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q6ViewController.swift; sourceTree = "<group>"; };
+		C545642527DA94B600AA3402 /* Q7ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q7ViewController.swift; sourceTree = "<group>"; };
+		C545642727DBA73400AA3402 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +115,14 @@
 			children = (
 				C54563EB27DA809200AA3402 /* AppDelegate.swift */,
 				C54563ED27DA809200AA3402 /* SceneDelegate.swift */,
-				C54563EF27DA809200AA3402 /* ViewController.swift */,
+				C54563EF27DA809200AA3402 /* Q1ViewController.swift */,
+				C545641B27DA946C00AA3402 /* Q2ViewController.swift */,
+				C545641D27DA947A00AA3402 /* Q3ViewController.swift */,
+				C545641F27DA948800AA3402 /* Q4ViewController.swift */,
+				C545642127DA949200AA3402 /* Q5ViewController.swift */,
+				C545642327DA94A100AA3402 /* Q6ViewController.swift */,
+				C545642727DBA73400AA3402 /* ReportViewController.swift */,
+				C545642527DA94B600AA3402 /* Q7ViewController.swift */,
 				C54563F127DA809200AA3402 /* Main.storyboard */,
 				C54563F427DA809300AA3402 /* Assets.xcassets */,
 				C54563F627DA809300AA3402 /* LaunchScreen.storyboard */,
@@ -258,9 +279,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C54563F027DA809200AA3402 /* ViewController.swift in Sources */,
+				C54563F027DA809200AA3402 /* Q1ViewController.swift in Sources */,
+				C545642627DA94B600AA3402 /* Q7ViewController.swift in Sources */,
 				C54563EC27DA809200AA3402 /* AppDelegate.swift in Sources */,
+				C545641E27DA947A00AA3402 /* Q3ViewController.swift in Sources */,
 				C54563EE27DA809200AA3402 /* SceneDelegate.swift in Sources */,
+				C545641C27DA946C00AA3402 /* Q2ViewController.swift in Sources */,
+				C545642027DA948800AA3402 /* Q4ViewController.swift in Sources */,
+				C545642227DA949200AA3402 /* Q5ViewController.swift in Sources */,
+				C545642827DBA73400AA3402 /* ReportViewController.swift in Sources */,
+				C545642427DA94A100AA3402 /* Q6ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,6 +467,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6WM3L6GXTU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SurvivorSpeak/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -446,12 +475,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = eecs441.SurvivorSpeak;
+				PRODUCT_BUNDLE_IDENTIFIER = "eecs441.SurvivorSpeak-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -466,6 +496,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 6WM3L6GXTU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SurvivorSpeak/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -473,12 +504,13 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = eecs441.SurvivorSpeak;
+				PRODUCT_BUNDLE_IDENTIFIER = "eecs441.SurvivorSpeak-";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
