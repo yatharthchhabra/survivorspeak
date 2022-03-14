@@ -8,18 +8,23 @@
 import UIKit
 
 class Q4ViewController: UIViewController {
+    @IBOutlet weak var progressBar: UIProgressView!
     
+    @IBOutlet weak var Okbtn: UIButton!
     @IBAction func datePicked(_ sender: UIDatePicker) {
-        var date = datePicker.date
-        var dateFormatter = DateFormatter()
+        let date = datePicker.date
+        let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "MM d, y"
-        var dateString = dateFormatter.string(from: date)
+        let dateString = dateFormatter.string(from: date)
         let defaults = UserDefaults.standard
         defaults.set(dateString, forKey: "Date")
     }
     @IBOutlet weak var datePicker: UIDatePicker!
     override func viewDidLoad() {
         super.viewDidLoad()
+        progressBar.setProgress(0.42, animated: true)
+        self.Okbtn.layer.cornerRadius = 15
+        self.Okbtn.layer.masksToBounds = true
 
         // Do any additional setup after loading the view.
     }

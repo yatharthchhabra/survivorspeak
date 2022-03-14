@@ -15,6 +15,9 @@ class Q5ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewData
         defaults.set(pickedCounty, forKey: "County")
     }
     
+
+    @IBOutlet weak var Okbtn: UIButton!
+    @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var countyPicker: UIPickerView!
     
     var counties =  ["Alcona","Alger","Allegan","Alpena","Antrim","Arenac","Baraga","Barry","Bay","Benzie","Berrien","Branch","Calhoun","Cass","Charlevoix","Cheboygan","Chippewa","Clare","Clinton","Crawford","Delta","Dickinson","Eaton","Emmet","Genesee","Gladwin","Gogebic","Grand Traverse","Gratiot","Hillsdale","Houghton","Huron","Ingham","Ionia","Iosco","Iron","Isabella","Jackson","Kalamazoo","Kalkaska","Kent","Keweenaw","Lake","Lapeer","Leelanau","Lenawee","Livingston","Luce","Mackinac","Macomb","Manistee","Marquette","Mason","Mecosta","Menominee","Midland","Missaukee","Monroe","Montcalm","Montmorency","Muskegon","Newaygo","Oakland","Oceana","Ogemaw","Ontonagon","Osceola","Oscoda","Otsego","Ottawa","Presque Isle","Roscommon","Saginaw","Sanilac","Schoolcraft","Shiawassee","St. Clair","St. Joseph","Tuscola","Van Buren","Washtenaw","Wayne","Wexford"]
@@ -22,6 +25,9 @@ class Q5ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewData
         super.viewDidLoad()
         self.countyPicker.delegate = self
         self.countyPicker.dataSource = self
+        progressBar.setProgress(0.56, animated: true)
+        self.Okbtn.layer.cornerRadius = 15
+        self.Okbtn.layer.masksToBounds = true
         // Do any additional setup after loading the view.
     }
     

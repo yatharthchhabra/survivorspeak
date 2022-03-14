@@ -13,10 +13,14 @@ class Q6ViewController: UIViewController {
         let defaults = UserDefaults.standard
         defaults.set(answerText.text, forKey: "Details")
     }
+    @IBOutlet weak var Okbtn: UIButton!
+    @IBOutlet weak var progressBar: UIProgressView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        progressBar.setProgress(0.80, animated: true)
+        self.Okbtn.layer.cornerRadius = 15
+        self.Okbtn.layer.masksToBounds = true
         // Do any additional setup after loading the view.
     }
     

@@ -22,6 +22,11 @@ class Q3ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewData
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return positions[row]
     }
+
+    
+    @IBOutlet weak var questionLabel: UILabel!
+    
+    @IBOutlet weak var progressBar: UIProgressView!
     
     var positions = ["Police Officer", "Attorney", "Prosecutor","Judge", "Correctional Facility Officer"]
     @IBOutlet weak var offenderText: UITextField!
@@ -32,11 +37,18 @@ class Q3ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewData
         defaults.set(pickedPosition, forKey: "Position")
 
     }
+    
+    @IBOutlet weak var Okbtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let defaults = UserDefaults.standard
+        progressBar.setProgress(0.28, animated: true)
         self.positionsPicker.delegate = self
         self.positionsPicker.dataSource = self
+        let tempname = defaults.string(forKey: "Name")
+        self.questionLabel.text = "Hey " + tempname! + ", who's this report about?"
+        self.Okbtn.layer.cornerRadius = 15
+        self.Okbtn.layer.masksToBounds = true
         
         // Do any additional setup after loading the view.
     }
