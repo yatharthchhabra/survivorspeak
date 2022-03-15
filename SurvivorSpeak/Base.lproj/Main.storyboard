@@ -338,7 +338,6 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="OK"/>
                                 <connections>
-                                    <action selector="Okbtn:" destination="Izl-Tb-1dP" eventType="touchUpInside" id="Wdk-Zq-NAc"/>
                                     <action selector="okClicked:" destination="Izl-Tb-1dP" eventType="touchUpInside" id="LvH-Sx-YDa"/>
                                     <segue destination="tVm-DQ-DGk" kind="show" id="RyX-as-PNd"/>
                                 </connections>
@@ -366,7 +365,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="mg0-2G-wmD"/>
                     <connections>
-                        <outlet property="Okbtn" destination="Wn6-lx-oSj" id="fDT-so-vnU"/>
+                        <outlet property="Okbtn" destination="Wn6-lx-oSj" id="KCP-mo-5K0"/>
                         <outlet property="QLabel" destination="npo-Pm-IOV" id="I4w-id-qdY"/>
                         <outlet property="countyPicker" destination="5a6-KV-XCc" id="2C1-TE-laj"/>
                         <outlet property="progressBar" destination="zZL-bN-Bfe" id="lv8-ym-faO"/>
