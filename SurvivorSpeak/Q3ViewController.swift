@@ -30,7 +30,7 @@ class Q3ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewData
     
     @IBOutlet weak var progressBar: UIProgressView!
     
-    var positions = ["Police Officer", "Attorney", "Prosecutor","Judge", "Correctional Facility Officer"]
+    var positions = ["Police Officer", "Attorney", "Prosecutor","Judge", "Correctional Facility Officer", "Unknown"]
     @IBOutlet weak var offenderText: UITextField!
     @IBOutlet weak var positionsPicker: UIPickerView!
     @IBAction func okClicked(_ sender: UIButton) {
