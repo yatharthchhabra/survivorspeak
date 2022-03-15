@@ -407,14 +407,14 @@
                                 <rect key="frame" x="139" y="794" width="150" height="4"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </progressView>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontSizeToFit="NO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iEi-r2-eMD">
-                                <rect key="frame" x="93" y="387" width="227" height="34"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2w3-IV-MJA">
+                                <rect key="frame" x="93" y="367" width="227" height="152"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.84455275535583496" green="0.25187146663665771" blue="0.91743171215057373" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes"/>
-                            </textField>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="LwW-CN-Lxs"/>
                         <color key="backgroundColor" red="0.84450429677963257" green="0.40114420652389526" blue="0.9069705605506897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -424,7 +424,7 @@
                     <connections>
                         <outlet property="Okbtn" destination="Yfz-32-Kv8" id="gkb-dK-uc9"/>
                         <outlet property="QLabel" destination="vqr-AR-KDT" id="ngV-XD-Din"/>
-                        <outlet property="answerText" destination="iEi-r2-eMD" id="hoH-lh-Y0m"/>
+                        <outlet property="answerText" destination="2w3-IV-MJA" id="NBF-qc-iCK"/>
                         <outlet property="progressBar" destination="tm9-n6-6PP" id="RbZ-NX-sXE"/>
                     </connections>
                 </viewController>
@@ -452,7 +452,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VWC-Ig-BoS">
-                                <rect key="frame" x="256" y="527" width="64" height="31"/>
+                                <rect key="frame" x="256" y="527" width="70" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

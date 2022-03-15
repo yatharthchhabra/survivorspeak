@@ -26,7 +26,7 @@ class FinalizeViewController: UIViewController
         let detailsText = defaults.string(forKey:"Details")
         
         
-        //SummaryLabel.text = "On " + dateText + ", in" + countyText + " county, "  + positionText + " " + offenderText + " commited an infraction as described below : " + detailsText
+        SummaryLabel.text = "On " + dateText + ", in" + countyText + " county, "  + positionText + " " + offenderText + " commited an infraction as described below : " + detailsText
         
         // Do any additional setup after loading the view.
     }

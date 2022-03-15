@@ -9,12 +9,12 @@ import UIKit
 
 class Q6ViewController: UIViewController {
     @IBOutlet weak var QLabel: UILabel!
-    @IBOutlet weak var answerText: UITextField!
     @IBAction func okClicked(_ sender: UIButton) {
         let defaults = UserDefaults.standard
         defaults.set(answerText.text, forKey: "Details")
     }
 
+    @IBOutlet weak var answerText: UITextView!
     @IBOutlet weak var Okbtn: UIButton!
     @IBOutlet weak var progressBar: UIProgressView!
     
