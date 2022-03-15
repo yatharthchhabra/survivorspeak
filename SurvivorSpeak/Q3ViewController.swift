@@ -23,8 +23,10 @@ class Q3ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewData
         return positions[row]
     }
 
+    @IBOutlet weak var PowerPosLabel: UILabel!
     
     @IBOutlet weak var questionLabel: UILabel!
+
     
     @IBOutlet weak var progressBar: UIProgressView!
     
@@ -38,6 +40,17 @@ class Q3ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewData
 
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        UIView.animate(withDuration: 1.0) {
+            self.questionLabel.alpha = 1.0
+            self.Okbtn.alpha = 1.0
+            self.offenderText.alpha = 1.0
+            self.positionsPicker.alpha = 1.0
+            self.PowerPosLabel.alpha = 1.0
+
+            }
+    }
+    
     @IBOutlet weak var Okbtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -46,9 +59,23 @@ class Q3ViewController: UIViewController, UIPickerViewDelegate, UIPickerViewData
         self.positionsPicker.delegate = self
         self.positionsPicker.dataSource = self
         let tempname = defaults.string(forKey: "Name")
-        self.questionLabel.text = "Hey " + tempname! + ", who's this report about?"
-        self.Okbtn.layer.cornerRadius = 15
-        self.Okbtn.layer.masksToBounds = true
+        self.questionLabel.text = "Ok " + tempname! + ", who's this report about?"
+        let view = self.Okbtn
+        let shadowLayer = CAShapeLayer()
+        view!.layer.cornerRadius = 20
+        shadowLayer.path = UIBezierPath(roundedRect: view!.bounds,
+                                            cornerRadius: view!.layer.cornerRadius).cgPath
+        shadowLayer.fillColor = view!.backgroundColor?.cgColor
+        shadowLayer.shadowColor = UIColor.darkGray.cgColor
+        shadowLayer.shadowOffset = CGSize(width: 2.0, height: 2.0)
+        shadowLayer.shadowOpacity = 0.6
+        shadowLayer.shadowRadius = 5.0
+        view!.layer.insertSublayer(shadowLayer, at: 0)
+        self.questionLabel.alpha = 0
+        self.Okbtn.alpha = 0
+        self.offenderText.alpha = 0
+        self.positionsPicker.alpha = 0
+        self.PowerPosLabel.alpha = 0
         
         // Do any additional setup after loading the view.
     }
