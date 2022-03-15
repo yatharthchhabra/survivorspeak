@@ -13,7 +13,7 @@
             <objects>
                 <viewController id="kPT-hC-lUT" customClass="ReportViewController" customModule="SurvivorSpeak" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UtR-iX-s7J">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q01-mJ-04N">
@@ -43,6 +43,7 @@
                         <viewLayoutGuide key="safeArea" id="USr-lC-Ene"/>
                         <color key="backgroundColor" red="0.84450429677963257" green="0.40114420652389526" blue="0.9069705605506897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="fWt-UN-Hid"/>
                     <connections>
                         <outlet property="OpeningLabel" destination="CGv-Kp-T1H" id="r9c-M5-fcD"/>
                         <outlet property="ReportBtn" destination="glJ-Rf-vbd" id="KeF-rV-cIo"/>
@@ -517,6 +518,8 @@
                                 <buttonConfiguration key="configuration" style="plain" title="Confirm"/>
                                 <connections>
                                     <action selector="okClicked:" destination="Izl-Tb-1dP" eventType="touchUpInside" id="iRd-Q6-BYm"/>
+                                    <action selector="onClick:" destination="qt4-Sa-ano" eventType="touchUpInside" id="hks-t7-6Xc"/>
+                                    <segue destination="WXC-3t-4Is" kind="show" id="8oW-Yh-y5s"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -533,6 +536,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YlS-nr-5wm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="923.83177570093449" y="1396.9762419006481"/>
+        </scene>
+        <!--End View Controller-->
+        <scene sceneID="eN1-EH-ByK">
+            <objects>
+                <viewController id="WXC-3t-4Is" customClass="EndViewController" customModule="SurvivorSpeak" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="roD-2R-b13">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Last step John Smith does this look right?" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8PG-BW-kRb">
+                                <rect key="frame" x="20" y="335" width="388" height="230"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3KR-Ds-nku">
+                                <rect key="frame" x="94" y="88" width="240" height="239"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boh-vF-JzL">
+                                <rect key="frame" x="98" y="658" width="232" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Create New Report"/>
+                                <connections>
+                                    <action selector="okClicked:" destination="Izl-Tb-1dP" eventType="touchUpInside" id="Ujm-F0-m4w"/>
+                                    <action selector="onClick:" destination="qt4-Sa-ano" eventType="touchUpInside" id="IQQ-WL-Nsa"/>
+                                    <segue destination="kPT-hC-lUT" kind="show" id="THc-fV-X6s"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="oBZ-mT-65w"/>
+                        <color key="backgroundColor" red="0.84450429677963257" green="0.40114420652389526" blue="0.9069705605506897" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="r2w-iX-d5Q"/>
+                    <connections>
+                        <outlet property="Okbtn" destination="boh-vF-JzL" id="nEM-LE-qqu"/>
+                        <outlet property="QLabel" destination="8PG-BW-kRb" id="FxM-wD-JYU"/>
+                        <outlet property="logoView" destination="3KR-Ds-nku" id="2nk-aN-szc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Bp-o4-U5F" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1997.663551401869" y="1209.7192224622031"/>
         </scene>
     </scenes>
     <resources>

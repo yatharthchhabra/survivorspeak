@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C3D7984727DFD2A200077CBF /* FinalizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D7984627DFD2A200077CBF /* FinalizeViewController.swift */; };
+		C3D7984B27E0D88800077CBF /* EndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3D7984A27E0D88800077CBF /* EndViewController.swift */; };
 		C54563EC27DA809200AA3402 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54563EB27DA809200AA3402 /* AppDelegate.swift */; };
 		C54563EE27DA809200AA3402 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54563ED27DA809200AA3402 /* SceneDelegate.swift */; };
 		C54563F027DA809200AA3402 /* Q1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54563EF27DA809200AA3402 /* Q1ViewController.swift */; };
@@ -45,6 +46,7 @@
 
 /* Begin PBXFileReference section */
 		C3D7984627DFD2A200077CBF /* FinalizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalizeViewController.swift; sourceTree = "<group>"; };
+		C3D7984A27E0D88800077CBF /* EndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndViewController.swift; sourceTree = "<group>"; };
 		C54563E827DA809200AA3402 /* SurvivorSpeak.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SurvivorSpeak.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C54563EB27DA809200AA3402 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C54563ED27DA809200AA3402 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				C545642527DA94B600AA3402 /* Q7ViewController.swift */,
 				C54563F127DA809200AA3402 /* Main.storyboard */,
 				C3D7984627DFD2A200077CBF /* FinalizeViewController.swift */,
+				C3D7984A27E0D88800077CBF /* EndViewController.swift */,
 				C54563F427DA809300AA3402 /* Assets.xcassets */,
 				C54563F627DA809300AA3402 /* LaunchScreen.storyboard */,
 				C54563F927DA809300AA3402 /* Info.plist */,
@@ -282,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3D7984B27E0D88800077CBF /* EndViewController.swift in Sources */,
 				C54563F027DA809200AA3402 /* Q1ViewController.swift in Sources */,
 				C545642627DA94B600AA3402 /* Q7ViewController.swift in Sources */,
 				C54563EC27DA809200AA3402 /* AppDelegate.swift in Sources */,
