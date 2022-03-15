@@ -25,9 +25,21 @@ class Q7ViewController: UIViewController {
         shadowLayer.shadowOpacity = 0.6
         shadowLayer.shadowRadius = 5.0
         view!.layer.insertSublayer(shadowLayer, at: 0)
+        self.Upload.alpha = 0
+        self.QLabel.alpha = 0
+        self.Okbtn.alpha = 0
         // Do any additional setup after loading the view.
     }
+    @IBOutlet weak var QLabel: UILabel!
+    @IBOutlet weak var Upload: UIImageView!
     
+    override func viewDidAppear(_ animated: Bool) {
+        UIView.animate(withDuration: 1.0) {
+            self.Upload.alpha = 1.0
+            self.QLabel.alpha = 1.0
+            self.Okbtn.alpha = 1.0
+            }
+    }
     
     /*
     // MARK: - Navigation
