@@ -55,9 +55,22 @@ class ReportViewController: UIViewController {
     }
     
     func updateLabel() {
+        let disclaim = """
+        1.  All submitted reports are unvetted and alleged accounts (not legally verified).
+        2.  All submitted reports will be shared with the public without any personal/contact information included (i.e only description, location, date, and reported authority member are shared).
+        3.  We respect your privacy and confidentiality. If you want to make an anonymous report, you may leave any personal or contact information fields blank. If you choose to fill out these fields, your replies will only be visible to the Survivor Speak Organization.
+        """
+        let alertController = UIAlertController(title: "Disclaimer", message: disclaim, preferredStyle: .alert)
+        let OKAction = UIAlertAction(title: "OK", style: .default) {
+            (action: UIAlertAction!) in
+            // Code in this block will trigger when OK button tapped.
+            print("Ok button tapped");
+        }
+        alertController.addAction(OKAction)
+        self.present(alertController, animated: true, completion: nil)
         UIView.animate(withDuration: 0.5, delay:0.0, options: UIView.AnimationOptions.curveEaseOut, animations: {self.OpeningLabel.alpha = 0.0}, completion:{(finished: Bool) -> Void in
             
-            self.OpeningLabel.text = "Experienced innapropraite behavior? Tell us more to help attornies build a case."
+            self.OpeningLabel.text = "Experienced inappropriate behavior? Tell us more to help attorneys build a case."
             
             UIView.animate(withDuration: 0.5, delay: 0.0, options: UIView.AnimationOptions.curveEaseIn, animations:{ self.OpeningLabel.alpha = 1.0},completion:nil)
         })
