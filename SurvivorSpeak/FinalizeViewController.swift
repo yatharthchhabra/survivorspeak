@@ -5,9 +5,19 @@
 //  Created by Siddharth Pillai on 3/14/22.
 //
 import UIKit
+import Firebase
 
 class FinalizeViewController: UIViewController
     {
+    let db = Firestore.firestore()
+    var name = ""
+    var phoneNum = ""
+    var emailAddr = ""
+    var dateText = ""
+    var countyText = ""
+    var positionText = ""
+    var offenderText = ""
+    var detailsText = ""
     
     func getDocumentsDirectory() -> URL {
         // find all possible documents directories for this user
@@ -26,14 +36,14 @@ class FinalizeViewController: UIViewController
         super.viewDidLoad()
         let defaults = UserDefaults.standard
         QLabel.text = "Last step " + defaults.string(forKey: "Name")! + ", does this look correct?"
-        let name = defaults.string(forKey: "Name")!
-        let phoneNum = defaults.string(forKey: "Phone")!
-        let emailAddr = defaults.string(forKey: "Email")!
-        let dateText = defaults.string(forKey: "Date")!
-        let countyText = defaults.string(forKey: "County")!
-        let positionText = defaults.string(forKey:"Position")!
-        let offenderText = defaults.string(forKey:"Offender")!
-        let detailsText = defaults.string(forKey:"Details")!
+        name = defaults.string(forKey: "Name")!
+        phoneNum = defaults.string(forKey: "Phone")!
+        emailAddr = defaults.string(forKey: "Email")!
+        dateText = defaults.string(forKey: "Date")!
+        countyText = defaults.string(forKey: "County")!
+        positionText = defaults.string(forKey:"Position")!
+        offenderText = defaults.string(forKey:"Offender")!
+        detailsText = defaults.string(forKey:"Details")!
         
         let firstSection = "On " + dateText + ", in " + countyText + " county, "
         let secondSection = positionText + " " + offenderText + " commited an infraction as described below : "
@@ -58,6 +68,27 @@ class FinalizeViewController: UIViewController
             try str.write(to: url, atomically: true, encoding: .utf8)
                 let input = try String(contentsOf: url)
                 print(input)
+            
+                // upload to firebase
+            // Add a new document with a generated ID
+            var ref: DocumentReference? = nil
+            ref = db.collection("Reports").addDocument(data: [
+                "county": countyText,
+                "date": dateText,
+                "details": detailsText,
+                "email" : emailAddr,
+                "name" : name,
+                "offender":offenderText ,
+                "phone" : phoneNum,
+                "position": positionText,
+            ]) { err in
+                if let err = err {
+                    print("Error adding document: \(err)")
+                } else {
+                    print("Document added with ID: \(ref!.documentID)")
+                }
+            }
+                
             } catch {
                 print(error.localizedDescription)
             }
