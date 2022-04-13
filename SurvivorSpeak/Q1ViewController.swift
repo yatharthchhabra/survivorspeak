@@ -9,8 +9,7 @@ import UIKit
 
 class Q1ViewController: UIViewController {
     let data = UserDefaults.standard
-    var dialogMessage = UIAlertController(title:"Error", message: "Name can not be left empty!", preferredStyle: .alert
-    )
+
     
     @IBOutlet weak var logoView: UIImageView!
     
@@ -24,7 +23,7 @@ class Q1ViewController: UIViewController {
     @IBAction func okClicked(_ sender: UIButton) {
         let defaults = UserDefaults.standard
         if (answer.text == "") {
-            self.present(dialogMessage, animated:true, completion:nil)
+            defaults.set("Anonymous",forKey: "Name")
         } else {
             defaults.set(answer.text, forKey: "Name")
         }
@@ -33,7 +32,7 @@ class Q1ViewController: UIViewController {
     func updateLabel() {
         UIView.animate(withDuration: 0.0, delay:0.0, options: UIView.AnimationOptions.curveEaseOut, animations: {self.QLabel.alpha = 0.0}, completion:{(finished: Bool) -> Void in
             
-            self.QLabel.text = "First up, how should we address you?"
+            self.QLabel.text = "First up, how should we address you? \n (Leave blank if you wish to remain anonymous)"
             
             UIView.animate(withDuration: 0.5, delay: 0.0, options: UIView.AnimationOptions.curveEaseIn, animations:{ self.QLabel.alpha = 1.0},completion:nil)
         })
@@ -70,7 +69,6 @@ class Q1ViewController: UIViewController {
         self.Okbtn.layer.shadowOffset = CGSize(width: 2.0, height: 2.0)
         self.Okbtn.layer.shadowOpacity = 0.4 */
 
-        dialogMessage.addAction(ok)
         // Do any additional setup after loading the view.
     }
 

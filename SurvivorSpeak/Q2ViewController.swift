@@ -58,7 +58,7 @@ class Q2ViewController: UIViewController {
     @IBAction func okClicked(_ sender: UIButton) {
         let defaults = UserDefaults.standard
         if (emailText.text == ""){
-            self.present(emailDialogMessage,animated: true,completion: nil)
+            defaults.set("anonymous", forKey: "Email")
         } else
         if(!isValidEmailAddress(emailString: emailText.text!)) {
             self.present(emailDialogMessage, animated: true, completion: nil)
@@ -67,7 +67,7 @@ class Q2ViewController: UIViewController {
             defaults.set(emailText.text, forKey: "Email")
         }
         if (phoneText.text == ""){
-            self.present(phoneDialogMessage,animated: true,completion: nil)
+            defaults.set("000-000-0000", forKey: "Phone")
         } else
             if(!isValidPhoneNumber(phone: phoneText.text!)) {
                 self.present(phoneDialogMessage,animated: true,completion: nil)
