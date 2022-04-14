@@ -593,10 +593,10 @@
             <objects>
                 <viewController id="qzw-ak-mxd" customClass="SeeReportsViewController" customModule="SurvivorSpeak" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BCu-Zy-xRU">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" fixedFrame="YES" text="Officer Kevin" translatesAutoresizingMaskIntoConstraints="NO" id="L71-Xh-xGc">
+                            <searchBar contentMode="redraw" fixedFrame="YES" text="" translatesAutoresizingMaskIntoConstraints="NO" id="L71-Xh-xGc">
                                 <rect key="frame" x="20" y="58" width="378" height="51"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -632,6 +632,8 @@
                     <navigationItem key="navigationItem" id="v3M-Qc-yTm"/>
                     <connections>
                         <outlet property="reportsTable" destination="ZKL-A8-33U" id="R0K-bN-ga3"/>
+                        <outlet property="searchBar" destination="L71-Xh-xGc" id="F9M-un-Pr7"/>
+                        <outlet property="searchLabel" destination="6ms-sn-dlm" id="phm-2f-ToH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ce3-ae-YDi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -732,6 +734,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="vIq-Di-dtm"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Fh-zH-xUk">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" systemColor="systemGray3Color"/>
                     </tabBar>
