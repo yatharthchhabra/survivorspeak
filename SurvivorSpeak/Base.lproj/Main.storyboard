@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kPT-hC-lUT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dVM-YH-RwM">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -8,12 +8,12 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Report View Controller-->
+        <!--Report-->
         <scene sceneID="HEB-vi-zhT">
             <objects>
                 <viewController id="kPT-hC-lUT" customClass="ReportViewController" customModule="SurvivorSpeak" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="UtR-iX-s7J">
-                        <rect key="frame" x="0.0" y="0.0" width="428" height="872"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="q01-mJ-04N">
@@ -43,6 +43,7 @@
                         <viewLayoutGuide key="safeArea" id="USr-lC-Ene"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Report" image="exclamationmark.bubble.fill" catalog="system" id="04W-ie-TOM"/>
                     <navigationItem key="navigationItem" id="fWt-UN-Hid"/>
                     <connections>
                         <outlet property="OpeningLabel" destination="CGv-Kp-T1H" id="r9c-M5-fcD"/>
@@ -53,7 +54,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z0y-wZ-4AN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-23.831775700934578" y="-551.40388768898492"/>
+            <point key="canvasLocation" x="876.1682242990654" y="-551.40388768898492"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -569,7 +570,7 @@
                                 <connections>
                                     <action selector="okClicked:" destination="Izl-Tb-1dP" eventType="touchUpInside" id="Ujm-F0-m4w"/>
                                     <action selector="onClick:" destination="qt4-Sa-ano" eventType="touchUpInside" id="IQQ-WL-Nsa"/>
-                                    <segue destination="kPT-hC-lUT" kind="show" id="THc-fV-X6s"/>
+                                    <segue destination="dVM-YH-RwM" kind="show" id="THc-fV-X6s"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -587,10 +588,10 @@
             </objects>
             <point key="canvasLocation" x="1997.663551401869" y="1209.7192224622031"/>
         </scene>
-        <!--Viewreports-->
+        <!--Search-->
         <scene sceneID="uIO-Bl-Qkg">
             <objects>
-                <viewController id="qzw-ak-mxd" customClass="viewreports" sceneMemberID="viewController">
+                <viewController id="qzw-ak-mxd" customClass="SeeReportsViewController" customModule="SurvivorSpeak" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BCu-Zy-xRU">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -600,51 +601,6 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <textInputTraits key="textInputTraits"/>
                             </searchBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ESE-zI-kYd">
-                                <rect key="frame" x="20" y="351" width="388" height="116"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">On 03 01, 2022, in Washtenaw county, Police Officer Kevin committed an infraction as described below : While I was driving, I was pulled over by Officer Kevin. He claimed I was speeding, but I was going the speed limit. He gave me a ticket. I’m convinced he only pulled me over because of the color of my skin.</string>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Gxg-Hs-5qJ">
-                                <rect key="frame" x="20" y="485" width="388" height="120"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">On 11 05, 2021, in Washtenaw county, Police Officer Kevin committed an infraction as described below : Officer Kevin saw me walking with a group of my friends on the University of Michigan campus. He claimed I was under the influence and gave me a Minor in Possession ticket without even breathalyzing me.</string>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TvD-Na-if2">
-                                <rect key="frame" x="20" y="623" width="388" height="95"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">On 08 23, 2021, in Washtenaw county, Police Officer Kevin committed an infraction as described below : Officer Kevin used very excessive and unnecessary rude language and force when arresting me.</string>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="eul-vH-mQN">
-                                <rect key="frame" x="20" y="737" width="388" height="97"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">On 06 15, 2019, in Washtenaw county, Police Officer Kevin committed an infraction as described below : Officer Kevin is the worst. This infraction happened 3 years ago, but I still remember it like it was yesterday because of how traumatic it was for me. I was driving home really late at night from a restaurant I went to with my friends. I didn’t drink</string>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="F14-O7-E0g">
-                                <rect key="frame" x="20" y="184" width="388" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <string key="text">On 03 20, 2022, in Washtenaw county, Police Officer Kevin committed an infraction as described below : Police Officer Kevin pulled me over for a busted headlight. He proceeded to illegally search my car. Finding a legal, sealed joint, he falsely claimed I was driving while under the influence. He arrested me and my car was impounded. I was later released due to no evidence found, but still had to pay to get my car back.</string>
-                                <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Search Results for: Officer Kevin" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ms-sn-dlm">
                                 <rect key="frame" x="-30" y="109" width="458" height="82"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -653,7 +609,102 @@
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H5Y-92-k1V">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZKL-A8-33U">
+                                <rect key="frame" x="20" y="169" width="388" height="675"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="reportid" id="Dmz-1H-ArA">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="388" height="43.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Dmz-1H-ArA" id="PmP-kZ-40m">
+                                            <rect key="frame" x="0.0" y="0.0" width="388" height="43.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NeL-gM-KaZ"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Search" image="magnifyingglass" catalog="system" id="PcN-IX-ULV"/>
+                    <navigationItem key="navigationItem" id="v3M-Qc-yTm"/>
+                    <connections>
+                        <outlet property="reportsTable" destination="ZKL-A8-33U" id="R0K-bN-ga3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ce3-ae-YDi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-782" y="-541"/>
+        </scene>
+        <!--See Reports View Controller-->
+        <scene sceneID="1xf-kb-gE6">
+            <objects>
+                <viewController id="yOd-QK-ADN" customClass="SeeReportsViewController" customModule="SurvivorSpeak" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sDw-Oy-186">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" fixedFrame="YES" text="Officer Kevin" translatesAutoresizingMaskIntoConstraints="NO" id="feM-UI-qns">
+                                <rect key="frame" x="20" y="58" width="378" height="51"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </searchBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="WnI-2W-tpK">
+                                <rect key="frame" x="20" y="351" width="388" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">On 03 01, 2022, in Washtenaw county, Police Officer Kevin committed an infraction as described below : While I was driving, I was pulled over by Officer Kevin. He claimed I was speeding, but I was going the speed limit. He gave me a ticket. I’m convinced he only pulled me over because of the color of my skin.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="u9G-An-2kM">
+                                <rect key="frame" x="20" y="485" width="388" height="120"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">On 11 05, 2021, in Washtenaw county, Police Officer Kevin committed an infraction as described below : Officer Kevin saw me walking with a group of my friends on the University of Michigan campus. He claimed I was under the influence and gave me a Minor in Possession ticket without even breathalyzing me.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="cn7-MQ-Tgx">
+                                <rect key="frame" x="20" y="623" width="388" height="95"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">On 08 23, 2021, in Washtenaw county, Police Officer Kevin committed an infraction as described below : Officer Kevin used very excessive and unnecessary rude language and force when arresting me.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2fm-uv-WWU">
+                                <rect key="frame" x="20" y="737" width="388" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">On 06 15, 2019, in Washtenaw county, Police Officer Kevin committed an infraction as described below : Officer Kevin is the worst. This infraction happened 3 years ago, but I still remember it like it was yesterday because of how traumatic it was for me. I was driving home really late at night from a restaurant I went to with my friends. I didn’t drink</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="5Cb-ld-G2o">
+                                <rect key="frame" x="20" y="184" width="388" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <string key="text">On 03 20, 2022, in Washtenaw county, Police Officer Kevin committed an infraction as described below : Police Officer Kevin pulled me over for a busted headlight. He proceeded to illegally search my car. Finding a legal, sealed joint, he falsely claimed I was driving while under the influence. He arrested me and my car was impounded. I was later released due to no evidence found, but still had to pay to get my car back.</string>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Search Results for: Officer Kevin" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hyj-PZ-8Cm">
+                                <rect key="frame" x="-30" y="109" width="458" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="30"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHe-eO-slh">
                                 <rect key="frame" x="119" y="852" width="181" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
@@ -661,27 +712,51 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Back To Home"/>
                                 <connections>
-                                    <action selector="okClicked:" destination="Izl-Tb-1dP" eventType="touchUpInside" id="Kbq-Xf-7pa"/>
+                                    <action selector="okClicked:" destination="Izl-Tb-1dP" eventType="touchUpInside" id="lYG-fA-9sL"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="NeL-gM-KaZ"/>
+                        <viewLayoutGuide key="safeArea" id="hhY-Zv-r9H"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <navigationItem key="navigationItem" id="v3M-Qc-yTm"/>
+                    <navigationItem key="navigationItem" id="O9c-6c-JVh"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ce3-ae-YDi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tOz-ZQ-EWL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-123.36448598130841" y="1426.781857451404"/>
+            <point key="canvasLocation" x="-841" y="1427"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="Z5b-KJ-fc8">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="dVM-YH-RwM" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="vIq-Di-dtm"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3Fh-zH-xUk">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" systemColor="systemGray3Color"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="kPT-hC-lUT" kind="relationship" relationship="viewControllers" id="LSm-4O-UcM"/>
+                        <segue destination="qzw-ak-mxd" kind="relationship" relationship="viewControllers" id="niY-Ty-UBw"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4T4-as-JER" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-23.831775700934578" y="-551.40388768898492"/>
         </scene>
     </scenes>
     <resources>
+        <image name="exclamationmark.bubble.fill" catalog="system" width="128" height="110"/>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="square.and.arrow.up" catalog="system" width="115" height="128"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemIndigoColor">
             <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

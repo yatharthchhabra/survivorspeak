@@ -33,7 +33,7 @@
 		C5E517F82807490900F8DB35 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C5E517F72807490900F8DB35 /* FirebaseFirestore */; };
 		C5E517FA2807490900F8DB35 /* FirebaseFirestoreCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = C5E517F92807490900F8DB35 /* FirebaseFirestoreCombine-Community */; };
 		C5E517FC2807490900F8DB35 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = C5E517FB2807490900F8DB35 /* FirebaseFirestoreSwift-Beta */; };
-		EB0F633927E9813200F4841B /* viewreports.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB0F633827E9813200F4841B /* viewreports.swift */; };
+		C5E517FE28085F0000F8DB35 /* SeeReportsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5E517FD28085F0000F8DB35 /* SeeReportsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,7 +77,7 @@
 		C545642527DA94B600AA3402 /* Q7ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Q7ViewController.swift; sourceTree = "<group>"; };
 		C545642727DBA73400AA3402 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		C5E517EC2807299F00F8DB35 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		EB0F633827E9813200F4841B /* viewreports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = viewreports.swift; sourceTree = "<group>"; };
+		C5E517FD28085F0000F8DB35 /* SeeReportsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeeReportsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,9 +138,9 @@
 				C54563EB27DA809200AA3402 /* AppDelegate.swift */,
 				C54563ED27DA809200AA3402 /* SceneDelegate.swift */,
 				C54563EF27DA809200AA3402 /* Q1ViewController.swift */,
-				EB0F633827E9813200F4841B /* viewreports.swift */,
 				C545641B27DA946C00AA3402 /* Q2ViewController.swift */,
 				C545641D27DA947A00AA3402 /* Q3ViewController.swift */,
+				C5E517FD28085F0000F8DB35 /* SeeReportsViewController.swift */,
 				C545641F27DA948800AA3402 /* Q4ViewController.swift */,
 				C545642127DA949200AA3402 /* Q5ViewController.swift */,
 				C545642327DA94A100AA3402 /* Q6ViewController.swift */,
@@ -319,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3D7984B27E0D88800077CBF /* EndViewController.swift in Sources */,
+				C5E517FE28085F0000F8DB35 /* SeeReportsViewController.swift in Sources */,
 				C54563F027DA809200AA3402 /* Q1ViewController.swift in Sources */,
 				C545642627DA94B600AA3402 /* Q7ViewController.swift in Sources */,
 				C54563EC27DA809200AA3402 /* AppDelegate.swift in Sources */,
@@ -326,7 +327,6 @@
 				C54563EE27DA809200AA3402 /* SceneDelegate.swift in Sources */,
 				C545641C27DA946C00AA3402 /* Q2ViewController.swift in Sources */,
 				C545642027DA948800AA3402 /* Q4ViewController.swift in Sources */,
-				EB0F633927E9813200F4841B /* viewreports.swift in Sources */,
 				C545642227DA949200AA3402 /* Q5ViewController.swift in Sources */,
 				C545642827DBA73400AA3402 /* ReportViewController.swift in Sources */,
 				C545642427DA94A100AA3402 /* Q6ViewController.swift in Sources */,
