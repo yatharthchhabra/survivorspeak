@@ -77,12 +77,17 @@ class ReportViewController: UIViewController {
     }
 
     @objc
+    public var loaded: Bool = false
     func onBeginView() {
-        for i in string {
-            OpeningLabel.text! += "\(i)"
-            RunLoop.current.run(until: Date() + 0.055)
-            
+        if (loaded == false) {
+            for i in string {
+                OpeningLabel.text! += "\(i)"
+                RunLoop.current.run(until: Date() + 0.055)
+        
+            }
+            loaded = true
         }
+                
         
         
     }
