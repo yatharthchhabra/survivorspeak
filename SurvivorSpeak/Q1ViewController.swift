@@ -32,7 +32,7 @@ class Q1ViewController: UIViewController {
     func updateLabel() {
         UIView.animate(withDuration: 0.0, delay:0.0, options: UIView.AnimationOptions.curveEaseOut, animations: {self.QLabel.alpha = 0.0}, completion:{(finished: Bool) -> Void in
             
-            self.QLabel.text = "First up, how should we address you? \n (Leave blank if you wish to remain anonymous)"
+            self.QLabel.text = "First up, how should we address you? \n (Feel free to leave any fields blank if you wish to remain anonymous)"
             
             UIView.animate(withDuration: 0.5, delay: 0.0, options: UIView.AnimationOptions.curveEaseIn, animations:{ self.QLabel.alpha = 1.0},completion:nil)
         })

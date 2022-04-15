@@ -27,7 +27,7 @@ class Q2ViewController: UIViewController {
     
     func isValidPhoneNumber(phone: String) -> Bool {
         var returnValue = true
-        let phoneRegEx = "^\\d{3}-\\d{3}-\\d{4}$"
+        let phoneRegEx = "^\\d{9}"
         do{
             let regex = try NSRegularExpression(pattern: phoneRegEx)
             let nsString = phone as NSString

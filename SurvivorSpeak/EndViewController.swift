@@ -26,7 +26,7 @@ class EndViewController: UIViewController {
         view!.layer.insertSublayer(shadowLayer, at: 0)
         let defaults = UserDefaults.standard
         logoView.image = UIImage(named: "logo.png")
-        self.QLabel.text  = "Thank you for your report, " + defaults.string(forKey: "Name")! + ". We are sorry this happened to you. Our team will look into the matter and be in contact."
+        self.QLabel.text  = "Thank you for your report, " + defaults.string(forKey: "Name")! + ". We are sorry this happened to you. Your report has been uploaded and our team will look into the matter and be in contact."
         self.Okbtn.alpha = 0
         self.QLabel.alpha = 0
         self.logoView.alpha = 0
