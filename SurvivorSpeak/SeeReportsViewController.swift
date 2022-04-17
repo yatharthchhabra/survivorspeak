@@ -94,7 +94,13 @@ class SeeReportsViewController: UIViewController, UITableViewDelegate, UITableVi
                     var finalText =  firstSection + secondSection + detailsText
                     
                     print(offenderText + "--" + searchBar.text!)
-                    if(offenderText.contains(searchBar.text!) || searchBar.text!.contains(offenderText)){
+                    offenderText = offenderText.lowercased()
+                    countyText = countyText.lowercased()
+                    var searchBarText = searchBar.text!.lowercased()
+                    if(offenderText.contains(searchBarText) || searchBarText.contains(offenderText)){
+                        self.reports.append(finalText)
+                        print(self.reports)
+                    } else if(countyText.contains(searchBarText) || searchBarText.contains(countyText)){
                         self.reports.append(finalText)
                         print(self.reports)
                     }

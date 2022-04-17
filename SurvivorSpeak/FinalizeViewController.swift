@@ -6,8 +6,10 @@
 //
 import UIKit
 import Firebase
+import FirebaseStorage
 
 class FinalizeViewController: UIViewController
+
     {
     let db = Firestore.firestore()
     var name = ""
@@ -60,6 +62,7 @@ class FinalizeViewController: UIViewController
         self.Okbtn.alpha = 0
         
         // Do any additional setup after loading the view.
+        
     }
     @IBAction func onClick(_ sender: Any) {
         let url = getDocumentsDirectory().appendingPathComponent("report.txt")
@@ -88,7 +91,14 @@ class FinalizeViewController: UIViewController
                     print("Document added with ID: \(ref!.documentID)")
                 }
             }
-                
+            let storage = Storage.storage().reference()
+            let defaults = UserDefaults.standard
+            if defaults.string(forKey: "URL") != nil{
+                var url = URL(string: defaults.string(forKey: "URL")!)!
+                storage.putFile(from: url, metadata: nil)
+                                    
+            }
+           
             } catch {
                 print(error.localizedDescription)
             }
@@ -100,4 +110,5 @@ class FinalizeViewController: UIViewController
             self.Okbtn.alpha = 1.0
             }
     }
+    
 }

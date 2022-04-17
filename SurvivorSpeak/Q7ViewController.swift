@@ -7,9 +7,11 @@
 
 import UIKit
 
-class Q7ViewController: UIViewController {
+class Q7ViewController: UIViewController,UIDocumentMenuDelegate,UIDocumentPickerDelegate,UINavigationControllerDelegate {
 
+    var myURL = URL(string: "")
     @IBOutlet weak var Okbtn: UIButton!
+    @IBOutlet weak var Upload: UIButton!
     @IBOutlet weak var progressBar: UIProgressView!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +33,6 @@ class Q7ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     @IBOutlet weak var QLabel: UILabel!
-    @IBOutlet weak var Upload: UIImageView!
     
     override func viewDidAppear(_ animated: Bool) {
         UIView.animate(withDuration: 1.0) {
@@ -41,6 +42,34 @@ class Q7ViewController: UIViewController {
             }
     }
     
+    func documentPicker(_ controller: UIDocumentPickerViewController, didPickDocumentAt url: URL) {
+            myURL = url as URL
+            let defaults = UserDefaults.standard
+            defaults.set(myURL, forKey: "URL")
+                  print("import result : \(myURL)")
+        }
+
+
+    func documentMenu(_ documentMenu:UIDocumentMenuViewController, didPickDocumentPicker documentPicker: UIDocumentPickerViewController) {
+            documentPicker.delegate = self
+            present(documentPicker, animated: true, completion: nil)
+        }
+
+
+    func documentPickerWasCancelled(_ controller: UIDocumentPickerViewController) {
+                print("view was cancelled")
+                dismiss(animated: true, completion: nil)
+        }
+    func openDocumentPicker(){
+        let docMenu = UIDocumentPickerViewController(documentTypes: ["public.item"], in: .import)
+           docMenu.delegate = self
+           //docMenu.modalPresentationStyle = .formSheet
+           self.present(docMenu, animated: true, completion: nil)
+    }
+    
+    @IBAction func selectDoc(_ sender: UIButton) {
+        openDocumentPicker()
+    }
     /*
     // MARK: - Navigation
 
