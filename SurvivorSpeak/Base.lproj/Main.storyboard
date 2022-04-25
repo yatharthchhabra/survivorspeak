@@ -576,7 +576,7 @@
                                 <color key="backgroundColor" systemColor="systemIndigoColor"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Create New Report"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Return to main page"/>
                                 <connections>
                                     <action selector="okClicked:" destination="Izl-Tb-1dP" eventType="touchUpInside" id="Ujm-F0-m4w"/>
                                     <action selector="onClick:" destination="qt4-Sa-ano" eventType="touchUpInside" id="IQQ-WL-Nsa"/>
